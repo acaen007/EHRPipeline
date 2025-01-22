@@ -1,4 +1,4 @@
-from invokers import GraphInvoker
+from .invokers import GraphInvoker
 from scipy.spatial.distance import cosine
 import numpy as np
 import rdflib
