@@ -6,25 +6,15 @@ from sklearn.cluster import KMeans
 import numpy as np
 import logging
 import rdflib
+import os
 
 class GraphEmbedder(ABC):
     def __init__(self, embeddingModel):
-        """
-        Initialize the GraphEmbedder with an embedding model.
-
-        :param embeddingModel: Pre-trained embedding model
-        """
         self.embeddingModel = embeddingModel
         self.empty_embedding = self.embeddingModel.encode("")  # Cache empty string embedding
 
     @lru_cache(maxsize=32)
     def loadGraph(self, graphPath):
-        """
-        Load an RDF graph from a file path.
-
-        :param graphPath: Path to the RDF graph file (e.g., Turtle, RDF/XML)
-        :return: An RDF graph object
-        """
         KG = rdflib.Graph()
         try:
             _, format = os.path.splitext(graphPath)
@@ -42,24 +32,12 @@ class GraphEmbedder(ABC):
         return KG
 
     def embedEdges(self, edges):
-        """
-        Embed edges using the embedding model.
-
-        :param edges: List of edges (predicates)
-        :return: Aggregated embedding of edges
-        """
         if not edges:
             return self.empty_embedding
         embeddings = [self.embeddingModel.encode(edge) for edge in edges]
         return sum(embeddings) / len(embeddings)
 
     def embedLabels(self, labels):
-        """
-        Embed labels using the embedding model.
-
-        :param labels: List of labels (objects)
-        :return: Aggregated embedding and a mapping of labels to embeddings
-        """
         if not labels:
             return self.empty_embedding, {}
         embeddings = [self.embeddingModel.encode(label) for label in labels]
@@ -70,11 +48,6 @@ class GraphEmbedder(ABC):
     def processBlankNode(self, KG, node, visited=None):
         """
         Process a blank node and recursively extract its semantic content.
-
-        :param KG: The RDF graph
-        :param node: The blank node to process
-        :param visited: A set of already-visited nodes to prevent infinite recursion
-        :return: A tuple (edges, labels) representing the semantic content of the blank node
         """
         if visited is None:
             visited = set()
@@ -98,9 +71,6 @@ class GraphEmbedder(ABC):
         return edges, labels
 
     def _processSubject(self, KG, subject):
-        """
-        Process a single subject, extracting edges, labels, and embeddings.
-        """
         edges, labels = [], []
         for predicate, obj in KG.predicate_objects(subject):
             edges.append(str(predicate))
@@ -117,12 +87,6 @@ class GraphEmbedder(ABC):
         return str(subject), edge_embeddings, label_embeddings
 
     def embedGraph(self, graphPath):
-        """
-        Embed a graph by processing its vertices, edges, and labels in parallel.
-
-        :param graphPath: Path to the RDF graph file (e.g., Turtle format)
-        :return: List of tuples (vertex, edge_embeddings, label_embeddings)
-        """
         logging.info(f"Embedding graph from {graphPath}...")
         KG = self.loadGraph(graphPath)
         logging.debug(f"Graph loaded with {len(KG)} triples.")
@@ -142,11 +106,6 @@ class GraphEmbedder(ABC):
         embedded_graph.extend(results)
         logging.info(f"Graph embedding completed with {len(embedded_graph)} vertices.")
         return embedded_graph
-
-import rdflib
-from concurrent.futures import ThreadPoolExecutor
-from tqdm import tqdm
-
 
 class SimpleDataEmbedder:
     def __init__(self, embeddingModel: object) -> None:
