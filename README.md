@@ -36,6 +36,7 @@ To get started, follow these steps to set up the environment:
 EHRPIPELINE
 ```lua
 |-- EHRPipeline
+|   |-- entity_linking/           # Tools for entity linking
 |   |-- entity_alignment/         # Tools for entity alignment
 |   |-- fact_validation/          # Methods for fact validation
 |   |-- semantic_completeness/    # Scripts ensuring semantic completeness
