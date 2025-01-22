@@ -1,0 +1,150 @@
+id,description
+1,Cardiomyopathy in diseases classified elsewhere
+2,Acute subendocardial myocardial infarction
+3,Atherosclerotic heart disease of native coronary artery
+4,Unspecified angina pectoris
+5,Nonrheumatic aortic (valve) stenosis
+6,"Congestive heart failure, unspecified"
+7,ST elevation (STEMI) myocardial infarction involving left main coronary artery
+8,Atherosclerotic heart disease of native coronary artery with unstable angina pectoris
+9,"Atrial fibrillation, unspecified"
+10,Acute on chronic diastolic heart failure
+11,Atherosclerotic heart disease of native coronary artery without angina pectoris
+12,Nonrheumatic aortic valve insufficiency
+13,Other pulmonary heart diseases
+14,"Atrial flutter, unspecified"
+15,Unspecified systolic (congestive) heart failure
+16,Acute myocardial infarction of left main coronary artery
+17,Acute myocardial infarction of other lateral wall
+18,Supraventricular tachycardia
+19,Other specified heart block
+20,Other forms of chronic ischemic heart disease
+21,Unspecified disease of pericardium
+22,Other specified cardiac arrhythmias
+23,"Atrioventricular block, first degree"
+24,Other and unspecified angina pectoris
+25,Sick sinus syndrome
+26,"Atrioventricular block, second degree"
+27,Acute myocardial infarction involving right coronary artery
+28,Old myocardial infarction
+29,"Atrioventricular block, complete"
+30,Primary pulmonary hypertension
+31,Left ventricular failure
+32,Chronic systolic (congestive) heart failure
+33,Pulmonary embolism without acute cor pulmonale
+34,Ventricular fibrillation
+35,Acute myocardial infarction involving right coronary artery
+36,Acute and subacute bacterial endocarditis
+37,Hypertrophic obstructive cardiomyopathy
+38,Acute combined systolic (congestive) and diastolic heart failure
+39,Acute systolic (congestive) heart failure
+40,Acute diastolic heart failure
+41,"Cardiac arrhythmia, unspecified"
+42,"Acute myocardial infarction, unspecified"
+43,Acute on chronic systolic (congestive) heart failure
+44,Acute myocardial infarction involving other inferior wall
+45,Unspecified diastolic heart failure
+46,Unspecified combined systolic (congestive) and diastolic heart failure
+47,ST elevation (STEMI) myocardial infarction involving other lateral wall
+48,Other pulmonary embolism without acute cor pulmonale
+49,Other specified diseases of pericardium
+50,Acute myocardial infarction involving other anterior wall
+51,Hemopericardium
+52,Acute pericarditis
+53,Chronic diastolic (congestive) heart failure
+54,First degree atrioventricular block
+55,Other restrictive cardiomyopathy
+56,"Bradycardia, unspecified"
+57,Pre-excitation syndrome
+58,"Endocarditis, valve unspecified"
+59,Coronary atherosclerosis due to calcified coronary lesion
+60,Coronary atherosclerosis due to lipid-rich plaque
+61,Complete heart block
+62,"Paroxysmal tachycardia, unspecified"
+63,Coronary atherosclerosis of native coronary artery with unstable angina
+64,Other and unspecified atrioventricular block
+65,Unspecified chronic pulmonary heart disease
+66,Other specified diseases of pulmonary circulation
+67,Nonrheumatic aortic stenosis with insufficiency
+68,"Heart disease, unspecified"
+69,Acute on chronic combined systolic and diastolic heart failure
+70,Acute myocardial infarction involving other inferior wall
+71,"Acute pericarditis, unspecified"
+72,Mobitz type II atrioventricular block
+73,Acute nonspecific pericarditis
+74,Acute myocardial infarction involving right coronary artery
+75,Acute myocardial infarction involving other inferior wall
+76,Other forms of angina pectoris
+77,Other specified heart diseases
+78,Coronary atherosclerosis due to native coronary artery
+79,"Ventricular aneurysm, acquired"
+80,Pericardial effusion (noninflammatory)
+81,Other specified heart diseases
+82,"Heart disease, unspecified"
+83,Acute myocardial infarction of left main coronary artery
+84,"Acute myocardial infarction, unspecified"
+85,Other complications of heart disease
+86,Unstable angina
+87,"Left bundle-branch block, unspecified"
+88,Cardiomyopathy in diseases classified elsewhere
+89,"Heart disease, unspecified"
+90,Constrictive pericarditis
+91,Other specified heart diseases
+92,Other and unspecified atrioventricular block
+93,Other specified cardiac arrhythmias
+94,Sick sinus syndrome
+95,Coronary atherosclerosis of native coronary artery with stable angina
+96,Other complications of heart disease
+97,"Cardiac arrhythmia, unspecified"
+98,Cardiomyopathy due to drug and external agent
+99,Acute nonspecific pericarditis
+100,Other specified disorders of heart
+101,"Ventricular aneurysm, acquired"
+102,Other chronic pulmonary heart diseases
+103,"Bundle-branch block, unspecified"
+104,Chronic combined systolic and diastolic heart failure
+105,Other diseases of pericardium
+106,Acute myocardial infarction involving left anterior descending coronary artery
+107,Acute myocardial infarction involving other inferior wall
+108,Other specified cardiac arrhythmias
+109,Other cardiomyopathies
+110,"Conduction disorder, unspecified"
+111,Other specified conduction disorders
+112,"Cardiomyopathy, unspecified"
+113,"Heart failure, unspecified"
+114,Old myocardial infarction
+115,Saddle embolus of pulmonary artery without acute cor pulmonale
+116,"Atherosclerosis of coronary artery bypass graft(s), unspecified"
+117,"Acute endocarditis, unspecified"
+118,Acute myocardial infarction involving other anterior wall
+119,Pulmonary valve stenosis
+120,"Ventricular aneurysm, acquired"
+121,Right bundle-branch block
+122,"Heart disease, unspecified"
+123,Other specified atrioventricular block
+124,"Rheumatic heart disease, unspecified"
+125,Other pulmonary embolism
+126,Aneurysm of pulmonary artery
+127,Idiopathic myocarditis
+128,Atherosclerosis of coronary artery bypass graft
+129,ST elevation (STEMI) myocardial infarction involving other coronary artery of anterior wall
+130,Angina pectoris with documented spasm
+131,Atherosclerosis of bypass graft
+132,Ventricular tachycardia
+133,"ST elevation myocardial infarction, site unspecified"
+134,Paroxysmal supraventricular tachycardia
+135,"Chronic ischemic heart disease, unspecified"
+136,Cardiomyopathy in diseases classified elsewhere
+137,Acute myocarditis
+138,Arteriovenous fistula of pulmonary vessels
+139,Other ill-defined heart diseases
+140,Other pulmonary heart disease
+141,Hypertrophic obstructive cardiomyopathy
+142,Non-ST elevation (NSTEMI) myocardial infarction
+143,Syphilitic aortitis
+144,Saddle embolus of pulmonary artery without acute cor pulmonale
+145,Other and unspecified atrioventricular block
+146,Coronary atherosclerosis of bypass graft
+147,STEMI involving right coronary artery
+148,STEMI involving other coronary artery of anterior wall
+149,Nonrheumatic mitral valve disorder
