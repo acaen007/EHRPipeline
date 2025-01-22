@@ -1,0 +1,268 @@
+icd_raw,icd_extracted,icd_text,snomed_uri,snomed_extracted,best_snomed_label,similarity,verdict
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#3521,3521,Glossopharyng neuralgia Glossopharyngeal neuralgia,http://snomed.info/id/43763009,43763009,Glossopharyngeal neuralgia,0.684,OK
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#412,412,Old myocardial infarct Old myocardial infarction,http://snomed.info/id/161502000,161502000,H/O: myocardial infarct at less than 60,0.612,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#4239,4239,Pericardial disease NOS Unspecified disease of pericardium,http://snomed.info/id/3238004,3238004,Pericarditis (disorder),0.456,Suspicious
+icd9#42823,42823,Ac on chr syst hrt fail Acute on chronic systolic heart failure,http://snomed.info/id/153951000119103,153951000119103,Acute on chronic combined systolic and diastolic heart failure,0.640,Suspicious
+icd9#4240,4240,Mitral valve disorder Mitral valve disorders,http://snomed.info/id/11851006,11851006,Mitral valve disorder (disorder),0.811,OK
+icd9#8604,8604,Traum pneumohemothor-cl Traumatic pneumohemothorax without mention of open wound into thorax,http://snomed.info/id/42434002,42434002,Traumatic pneumothorax and hemothorax,0.516,Suspicious
+icd9#3949,3949,Mitral valve dis NEC/NOS Other and unspecified mitral valve diseases,http://snomed.info/id/194732001,194732001,Diseases of mitral and aortic valves (disorder),0.464,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#4240,4240,Mitral valve disorder Mitral valve disorders,http://snomed.info/id/11851006,11851006,Mitral valve disorder (disorder),0.811,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#8872,8872,"Amput abv elbow, unilat Traumatic amputation of arm and hand (complete) (partial), unilateral, at or above elbow, without mention of complication",http://snomed.info/id/735666001,735666001,Traumatic amputation of both arms between elbow and wrist,0.454,Suspicious
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#3612,3612,Serous retina detachment Serous retinal detachment,http://snomed.info/id/38599001,38599001,Serous retinal detachment (disorder),0.714,OK
+icd9#3950,3950,Rheumat aortic stenosis Rheumatic aortic stenosis,http://snomed.info/id/72011007,72011007,Rheumatic aortic stenosis,0.676,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#4275,4275,Cardiac arrest Cardiac arrest,http://snomed.info/id/410429000,410429000,Cardiac arrest (disorder),0.731,OK
+icd9#3521,3521,Glossopharyng neuralgia Glossopharyngeal neuralgia,http://snomed.info/id/43763009,43763009,Glossopharyngeal neuralgia,0.684,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#7769,7769,NB hematological dis NOS Unspecified hematological disorder specific to newborn,http://snomed.info/id/414028007,414028007,Disorder of hematopoietic system in newborn,0.475,Suspicious
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#9672,9672,Poisoning-paraldehyde Poisoning by paraldehyde,http://snomed.info/id/34764007,34764007,Poisoning caused by paraldehyde,0.711,OK
+icd9#412,412,Old myocardial infarct Old myocardial infarction,http://snomed.info/id/161502000,161502000,H/O: myocardial infarct at less than 60,0.612,Suspicious
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#9962,9962,"Malfun neuro device/graf Mechanical complication of nervous system device, implant, and graft",http://snomed.info/id/16411000,16411000,"Mechanical complication of nervous system device, implant AND/OR graft",0.835,OK
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#8872,8872,"Amput abv elbow, unilat Traumatic amputation of arm and hand (complete) (partial), unilateral, at or above elbow, without mention of complication",http://snomed.info/id/735666001,735666001,Traumatic amputation of both arms between elbow and wrist,0.454,Suspicious
+icd9#9672,9672,Poisoning-paraldehyde Poisoning by paraldehyde,http://snomed.info/id/34764007,34764007,Poisoning caused by paraldehyde,0.711,OK
+icd9#3612,3612,Serous retina detachment Serous retinal detachment,http://snomed.info/id/38599001,38599001,Serous retinal detachment (disorder),0.714,OK
+icd9#4210,4210,Ac/subac bact endocard Acute and subacute bacterial endocarditis,http://snomed.info/id/266237004,266237004,Acute and subacute bacterial endocarditis,0.788,OK
+icd9#42822,42822,Chr systolic hrt failure Chronic systolic heart failure,http://snomed.info/id/153941000119100,153941000119100,Chronic combined systolic and diastolic heart failure,0.667,OK
+icd9#42822,42822,Chr systolic hrt failure Chronic systolic heart failure,http://snomed.info/id/153941000119100,153941000119100,Chronic combined systolic and diastolic heart failure,0.667,OK
+icd9#8407,8407,Sup glenoid labrm lesion Superior glenoid labrum lesion,http://snomed.info/id/441912008,441912008,Injury of superior glenoid labrum of shoulder joint,0.623,Suspicious
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#9723,9723,Pois-ganglion block agt Poisoning by ganglion-blocking agents,http://snomed.info/id/212694004,212694004,Poisoning by ganglion-blocking agent,0.745,OK
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#5995,5995,Prolapse urethral mucosa Prolapsed urethral mucosa,http://snomed.info/id/772794003,772794003,Prolapse of urethral mucosa,0.675,OK
+icd9#4160,4160,Prim pulm hypertension Primary pulmonary hypertension,http://snomed.info/id/233943009,233943009,Sporadic primary pulmonary hypertension,0.739,OK
+icd9#7768,7768,Transient hemat dis NEC Other specified transient hematological disorders of fetus or newborn,http://snomed.info/id/414028007,414028007,Disorder of hematopoietic system in newborn,0.456,Suspicious
+icd9#7761,7761,Neonatal thrombocytopen Transient neonatal thrombocytopenia,http://snomed.info/id/82835005,82835005,Neonatal thrombocytopenia (disorder),0.602,Suspicious
+icd9#5523,5523,Diaphragm hernia w obstr Diaphragmatic hernia with obstruction,http://snomed.info/id/196903009,196903009,Obstructed diaphragmatic hernia (disorder),0.588,Suspicious
+icd9#4239,4239,Pericardial disease NOS Unspecified disease of pericardium,http://snomed.info/id/3238004,3238004,Pericarditis (disorder),0.456,Suspicious
+icd9#3612,3612,Serous retina detachment Serous retinal detachment,http://snomed.info/id/38599001,38599001,Serous retinal detachment (disorder),0.714,OK
+icd9#7769,7769,NB hematological dis NOS Unspecified hematological disorder specific to newborn,http://snomed.info/id/414028007,414028007,Disorder of hematopoietic system in newborn,0.475,Suspicious
+icd9#9390,9390,FB bladder & urethra Foreign body in bladder and urethra,http://snomed.info/id/211648000,211648000,Foreign body in bladder and urethra,0.778,OK
+icd9#3220,3220,Nonpyogenic meningitis Nonpyogenic meningitis,http://snomed.info/id/230155003,230155003,Non-infective meningitis,0.559,Suspicious
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#4232,4232,Constrictiv pericarditis Constrictive pericarditis,http://snomed.info/id/85598007,85598007,Constrictive pericarditis (disorder),0.690,OK
+icd9#3491,3491,Complication cns device Nervous system complications from surgically implanted device,http://snomed.info/id/193067002,193067002,Nervous system complication from surgically implanted device,0.828,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#9390,9390,FB bladder & urethra Foreign body in bladder and urethra,http://snomed.info/id/211648000,211648000,Foreign body in bladder and urethra,0.778,OK
+icd9#3141,3141,Hyperkinet w devel delay Hyperkinesis with developmental delay,http://snomed.info/id/192131001,192131001,Hyperkinesis with developmental delay,0.747,OK
+icd9#8872,8872,"Amput abv elbow, unilat Traumatic amputation of arm and hand (complete) (partial), unilateral, at or above elbow, without mention of complication",http://snomed.info/id/735666001,735666001,Traumatic amputation of both arms between elbow and wrist,0.454,Suspicious
+icd9#8841,8841,"Open wound arm NOS-compl Multiple and unspecified open wound of upper limb, complicated",http://snomed.info/id/77893004,77893004,Open wound of upper limb with complication,0.535,Suspicious
+icd9#4241,4241,Aortic valve disorder Aortic valve disorders,http://snomed.info/id/8722008,8722008,Aortic valve disorder (disorder),0.811,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#311,311,"Depressive disorder NEC Depressive disorder, not elsewhere classified",http://snomed.info/id/35489007,35489007,Depressive disorder (disorder),0.583,Suspicious
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#4240,4240,Mitral valve disorder Mitral valve disorders,http://snomed.info/id/11851006,11851006,Mitral valve disorder (disorder),0.811,OK
+icd9#9672,9672,Poisoning-paraldehyde Poisoning by paraldehyde,http://snomed.info/id/34764007,34764007,Poisoning caused by paraldehyde,0.711,OK
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#4271,4271,Parox ventric tachycard Paroxysmal ventricular tachycardia,http://snomed.info/id/21421000119109,21421000119109,Nonsustained paroxysmal ventricular tachycardia,0.762,OK
+icd9#42090,42090,"Acute pericarditis NOS Acute pericarditis, unspecified",http://snomed.info/id/15555002,15555002,Acute pericarditis (disorder),0.575,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#4271,4271,Parox ventric tachycard Paroxysmal ventricular tachycardia,http://snomed.info/id/21421000119109,21421000119109,Nonsustained paroxysmal ventricular tachycardia,0.762,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#9672,9672,Poisoning-paraldehyde Poisoning by paraldehyde,http://snomed.info/id/34764007,34764007,Poisoning caused by paraldehyde,0.711,OK
+icd9#8962,8962,"Amputation foot, bilat Traumatic amputation of foot (complete) (partial), bilateral, without mention of complication",http://snomed.info/id/36211009,36211009,Bilateral traumatic amputation of feet without complication,0.655,OK
+icd9#4148,4148,Chr ischemic hrt dis NEC Other specified forms of chronic ischemic heart disease,http://snomed.info/id/413838009,413838009,Chronic ischemic heart disease,0.545,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#4241,4241,Aortic valve disorder Aortic valve disorders,http://snomed.info/id/8722008,8722008,Aortic valve disorder (disorder),0.811,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#4271,4271,Parox ventric tachycard Paroxysmal ventricular tachycardia,http://snomed.info/id/21421000119109,21421000119109,Nonsustained paroxysmal ventricular tachycardia,0.762,OK
+icd9#9672,9672,Poisoning-paraldehyde Poisoning by paraldehyde,http://snomed.info/id/34764007,34764007,Poisoning caused by paraldehyde,0.711,OK
+icd9#4148,4148,Chr ischemic hrt dis NEC Other specified forms of chronic ischemic heart disease,http://snomed.info/id/413838009,413838009,Chronic ischemic heart disease,0.545,Suspicious
+icd9#4139,4139,Angina pectoris NEC/NOS Other and unspecified angina pectoris,http://snomed.info/id/161504004,161504004,History of angina pectoris,0.535,Suspicious
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#4271,4271,Parox ventric tachycard Paroxysmal ventricular tachycardia,http://snomed.info/id/21421000119109,21421000119109,Nonsustained paroxysmal ventricular tachycardia,0.762,OK
+icd9#3491,3491,Complication cns device Nervous system complications from surgically implanted device,http://snomed.info/id/193067002,193067002,Nervous system complication from surgically implanted device,0.828,OK
+icd9#9914,9914,Immersion foot Immersion foot,http://snomed.info/id/271331002,271331002,Immersion foot (disorder),0.692,OK
+icd9#3521,3521,Glossopharyng neuralgia Glossopharyngeal neuralgia,http://snomed.info/id/43763009,43763009,Glossopharyngeal neuralgia,0.684,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#41519,41519,Pulm embol/infarct NEC Other pulmonary embolism and infarction,http://snomed.info/id/1001000119102,1001000119102,Pulmonary embolism with pulmonary infarction,0.667,OK
+icd9#9672,9672,Poisoning-paraldehyde Poisoning by paraldehyde,http://snomed.info/id/34764007,34764007,Poisoning caused by paraldehyde,0.711,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#4148,4148,Chr ischemic hrt dis NEC Other specified forms of chronic ischemic heart disease,http://snomed.info/id/413838009,413838009,Chronic ischemic heart disease,0.545,Suspicious
+icd9#3321,3321,Secondary parkinsonism Secondary parkinsonism,http://snomed.info/id/230292008,230292008,Secondary parkinsonism (disorder),0.711,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#412,412,Old myocardial infarct Old myocardial infarction,http://snomed.info/id/161502000,161502000,H/O: myocardial infarct at less than 60,0.612,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#4139,4139,Angina pectoris NEC/NOS Other and unspecified angina pectoris,http://snomed.info/id/161504004,161504004,History of angina pectoris,0.535,Suspicious
+icd9#9723,9723,Pois-ganglion block agt Poisoning by ganglion-blocking agents,http://snomed.info/id/212694004,212694004,Poisoning by ganglion-blocking agent,0.745,OK
+icd9#9390,9390,FB bladder & urethra Foreign body in bladder and urethra,http://snomed.info/id/211648000,211648000,Foreign body in bladder and urethra,0.778,OK
+icd9#8872,8872,"Amput abv elbow, unilat Traumatic amputation of arm and hand (complete) (partial), unilateral, at or above elbow, without mention of complication",http://snomed.info/id/735666001,735666001,Traumatic amputation of both arms between elbow and wrist,0.454,Suspicious
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#8960,8960,"Amputation foot, unilat Traumatic amputation of foot (complete) (partial), unilateral, without mention of complication",http://snomed.info/id/36211009,36211009,Bilateral traumatic amputation of feet without complication,0.635,Suspicious
+icd9#4148,4148,Chr ischemic hrt dis NEC Other specified forms of chronic ischemic heart disease,http://snomed.info/id/413838009,413838009,Chronic ischemic heart disease,0.545,Suspicious
+icd9#4210,4210,Ac/subac bact endocard Acute and subacute bacterial endocarditis,http://snomed.info/id/266237004,266237004,Acute and subacute bacterial endocarditis,0.788,OK
+icd9#42732,42732,Atrial flutter Atrial flutter,http://snomed.info/id/428076002,428076002,History of atrial flutter,0.704,OK
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#4240,4240,Mitral valve disorder Mitral valve disorders,http://snomed.info/id/11851006,11851006,Mitral valve disorder (disorder),0.811,OK
+icd9#412,412,Old myocardial infarct Old myocardial infarction,http://snomed.info/id/161502000,161502000,H/O: myocardial infarct at less than 60,0.612,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#9672,9672,Poisoning-paraldehyde Poisoning by paraldehyde,http://snomed.info/id/34764007,34764007,Poisoning caused by paraldehyde,0.711,OK
+icd9#9672,9672,Poisoning-paraldehyde Poisoning by paraldehyde,http://snomed.info/id/34764007,34764007,Poisoning caused by paraldehyde,0.711,OK
+icd9#4240,4240,Mitral valve disorder Mitral valve disorders,http://snomed.info/id/11851006,11851006,Mitral valve disorder (disorder),0.811,OK
+icd9#42830,42830,"Diastolc hrt failure NOS Diastolic heart failure, unspecified",http://snomed.info/id/609555007,609555007,Diastolic heart failure stage A (finding),0.606,Suspicious
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#4240,4240,Mitral valve disorder Mitral valve disorders,http://snomed.info/id/11851006,11851006,Mitral valve disorder (disorder),0.811,OK
+icd9#5371,5371,Gastric diverticulum Gastric diverticulum,http://snomed.info/id/75198005,75198005,Gastric diverticulum (disorder),0.743,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#8411,8411,Sprain ulnar collat lig Ulnar collateral ligament sprain,http://snomed.info/id/209453007,209453007,Sprain of ulnar collateral ligament of wrist joint,0.717,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#4240,4240,Mitral valve disorder Mitral valve disorders,http://snomed.info/id/11851006,11851006,Mitral valve disorder (disorder),0.811,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#7761,7761,Neonatal thrombocytopen Transient neonatal thrombocytopenia,http://snomed.info/id/82835005,82835005,Neonatal thrombocytopenia (disorder),0.602,Suspicious
+icd9#4271,4271,Parox ventric tachycard Paroxysmal ventricular tachycardia,http://snomed.info/id/21421000119109,21421000119109,Nonsustained paroxysmal ventricular tachycardia,0.762,OK
+icd9#412,412,Old myocardial infarct Old myocardial infarction,http://snomed.info/id/161502000,161502000,H/O: myocardial infarct at less than 60,0.612,Suspicious
+icd9#8842,8842,"Opn wnd arm NOS w tendon Multiple and unspecified open wound of upper limb, with tendon involvement",http://snomed.info/id/25354003,25354003,Open wound of upper limb with tendon involvement,0.658,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#8604,8604,Traum pneumohemothor-cl Traumatic pneumohemothorax without mention of open wound into thorax,http://snomed.info/id/42434002,42434002,Traumatic pneumothorax and hemothorax,0.516,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#4254,4254,Prim cardiomyopathy NEC Other primary cardiomyopathies,http://snomed.info/id/89461002,89461002,Primary cardiomyopathy (disorder),0.565,Suspicious
+icd9#3963,3963,Mitral/aortic val insuff Mitral valve insufficiency and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.741,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#4160,4160,Prim pulm hypertension Primary pulmonary hypertension,http://snomed.info/id/233943009,233943009,Sporadic primary pulmonary hypertension,0.739,OK
+icd9#3949,3949,Mitral valve dis NEC/NOS Other and unspecified mitral valve diseases,http://snomed.info/id/194732001,194732001,Diseases of mitral and aortic valves (disorder),0.464,Suspicious
+icd9#311,311,"Depressive disorder NEC Depressive disorder, not elsewhere classified",http://snomed.info/id/35489007,35489007,Depressive disorder (disorder),0.583,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#412,412,Old myocardial infarct Old myocardial infarction,http://snomed.info/id/161502000,161502000,H/O: myocardial infarct at less than 60,0.612,Suspicious
+icd9#4139,4139,Angina pectoris NEC/NOS Other and unspecified angina pectoris,http://snomed.info/id/161504004,161504004,History of angina pectoris,0.535,Suspicious
+icd9#9723,9723,Pois-ganglion block agt Poisoning by ganglion-blocking agents,http://snomed.info/id/212694004,212694004,Poisoning by ganglion-blocking agent,0.745,OK
+icd9#4239,4239,Pericardial disease NOS Unspecified disease of pericardium,http://snomed.info/id/3238004,3238004,Pericarditis (disorder),0.456,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#4241,4241,Aortic valve disorder Aortic valve disorders,http://snomed.info/id/8722008,8722008,Aortic valve disorder (disorder),0.811,OK
+icd9#3321,3321,Secondary parkinsonism Secondary parkinsonism,http://snomed.info/id/230292008,230292008,Secondary parkinsonism (disorder),0.711,OK
+icd9#8872,8872,"Amput abv elbow, unilat Traumatic amputation of arm and hand (complete) (partial), unilateral, at or above elbow, without mention of complication",http://snomed.info/id/735666001,735666001,Traumatic amputation of both arms between elbow and wrist,0.454,Suspicious
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#4275,4275,Cardiac arrest Cardiac arrest,http://snomed.info/id/410429000,410429000,Cardiac arrest (disorder),0.731,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#8872,8872,"Amput abv elbow, unilat Traumatic amputation of arm and hand (complete) (partial), unilateral, at or above elbow, without mention of complication",http://snomed.info/id/735666001,735666001,Traumatic amputation of both arms between elbow and wrist,0.454,Suspicious
+icd9#42842,42842,Chr syst/diastl hrt fail Chronic combined systolic and diastolic heart failure,http://snomed.info/id/153941000119100,153941000119100,Chronic combined systolic and diastolic heart failure,0.815,OK
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#4241,4241,Aortic valve disorder Aortic valve disorders,http://snomed.info/id/8722008,8722008,Aortic valve disorder (disorder),0.811,OK
+icd9#8872,8872,"Amput abv elbow, unilat Traumatic amputation of arm and hand (complete) (partial), unilateral, at or above elbow, without mention of complication",http://snomed.info/id/735666001,735666001,Traumatic amputation of both arms between elbow and wrist,0.454,Suspicious
+icd9#9390,9390,FB bladder & urethra Foreign body in bladder and urethra,http://snomed.info/id/211648000,211648000,Foreign body in bladder and urethra,0.778,OK
+icd9#3229,3229,"Meningitis NOS Meningitis, unspecified",http://snomed.info/id/7180009,7180009,Meningitis (disorder),0.500,Suspicious
+icd9#325,325,Phlebitis intrcran sinus Phlebitis and thrombophlebitis of intracranial venous sinuses,http://snomed.info/id/18058007,18058007,Phlebitis of intracranial venous sinus,0.613,Suspicious
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#3814,3814,"Nonsupp otitis media NOS Nonsuppurative otitis media, not specified as acute or chronic",http://snomed.info/id/359609001,359609001,Acute non-suppurative otitis media (disorder),0.578,Suspicious
+icd9#3950,3950,Rheumat aortic stenosis Rheumatic aortic stenosis,http://snomed.info/id/72011007,72011007,Rheumatic aortic stenosis,0.676,OK
+icd9#4271,4271,Parox ventric tachycard Paroxysmal ventricular tachycardia,http://snomed.info/id/21421000119109,21421000119109,Nonsustained paroxysmal ventricular tachycardia,0.762,OK
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#42831,42831,Ac diastolic hrt failure Acute diastolic heart failure,http://snomed.info/id/153931000119109,153931000119109,Acute combined systolic and diastolic heart failure,0.686,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#4139,4139,Angina pectoris NEC/NOS Other and unspecified angina pectoris,http://snomed.info/id/161504004,161504004,History of angina pectoris,0.535,Suspicious
+icd9#3521,3521,Glossopharyng neuralgia Glossopharyngeal neuralgia,http://snomed.info/id/43763009,43763009,Glossopharyngeal neuralgia,0.684,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#41511,41511,Iatrogen pulm emb/infarc Iatrogenic pulmonary embolism and infarction,http://snomed.info/id/1001000119102,1001000119102,Pulmonary embolism with pulmonary infarction,0.589,Suspicious
+icd9#42822,42822,Chr systolic hrt failure Chronic systolic heart failure,http://snomed.info/id/153941000119100,153941000119100,Chronic combined systolic and diastolic heart failure,0.667,OK
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#4242,4242,"Nonrheum tricusp val dis Tricuspid valve disorders, specified as nonrheumatic",http://snomed.info/id/194989009,194989009,"Tricuspid valve disorders, non-rheumatic",0.667,OK
+icd9#3612,3612,Serous retina detachment Serous retinal detachment,http://snomed.info/id/38599001,38599001,Serous retinal detachment (disorder),0.714,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#42822,42822,Chr systolic hrt failure Chronic systolic heart failure,http://snomed.info/id/153941000119100,153941000119100,Chronic combined systolic and diastolic heart failure,0.667,OK
+icd9#3612,3612,Serous retina detachment Serous retinal detachment,http://snomed.info/id/38599001,38599001,Serous retinal detachment (disorder),0.714,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#42830,42830,"Diastolc hrt failure NOS Diastolic heart failure, unspecified",http://snomed.info/id/609555007,609555007,Diastolic heart failure stage A (finding),0.606,Suspicious
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#8872,8872,"Amput abv elbow, unilat Traumatic amputation of arm and hand (complete) (partial), unilateral, at or above elbow, without mention of complication",http://snomed.info/id/735666001,735666001,Traumatic amputation of both arms between elbow and wrist,0.454,Suspicious
+icd9#42830,42830,"Diastolc hrt failure NOS Diastolic heart failure, unspecified",http://snomed.info/id/609555007,609555007,Diastolic heart failure stage A (finding),0.606,Suspicious
+icd9#4219,4219,"Ac/subac endocardit NOS Acute endocarditis, unspecified",http://snomed.info/id/91357005,91357005,Acute endocarditis (disorder),0.525,Suspicious
+icd9#7761,7761,Neonatal thrombocytopen Transient neonatal thrombocytopenia,http://snomed.info/id/82835005,82835005,Neonatal thrombocytopenia (disorder),0.602,Suspicious
+icd9#311,311,"Depressive disorder NEC Depressive disorder, not elsewhere classified",http://snomed.info/id/35489007,35489007,Depressive disorder (disorder),0.583,Suspicious
+icd9#4131,4131,Prinzmetal angina Prinzmetal angina,http://snomed.info/id/87343002,87343002,Prinzmetal angina (disorder),0.656,OK
+icd9#3734,3734,Infect derm lid w deform Infective dermatitis of eyelid of types resulting in deformity,http://snomed.info/id/71577007,71577007,Infective dermatitis of eyelid resulting in deformity,0.757,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#7761,7761,Neonatal thrombocytopen Transient neonatal thrombocytopenia,http://snomed.info/id/82835005,82835005,Neonatal thrombocytopenia (disorder),0.602,Suspicious
+icd9#8628,8628,"Intrathoracic inj NOS-cl Injury to multiple and unspecified intrathoracic organs, without mention of open wound into cavity",http://snomed.info/id/210106000,210106000,Multiple intrathoracic organ injury with open wound into cavity,0.609,Suspicious
+icd9#311,311,"Depressive disorder NEC Depressive disorder, not elsewhere classified",http://snomed.info/id/35489007,35489007,Depressive disorder (disorder),0.583,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#42822,42822,Chr systolic hrt failure Chronic systolic heart failure,http://snomed.info/id/153941000119100,153941000119100,Chronic combined systolic and diastolic heart failure,0.667,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#3612,3612,Serous retina detachment Serous retinal detachment,http://snomed.info/id/38599001,38599001,Serous retinal detachment (disorder),0.714,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#4254,4254,Prim cardiomyopathy NEC Other primary cardiomyopathies,http://snomed.info/id/89461002,89461002,Primary cardiomyopathy (disorder),0.565,Suspicious
+icd9#3929,3929,Rheumatic chorea NOS Rheumatic chorea without mention of heart involvement,http://snomed.info/id/46826000,46826000,Rheumatic chorea (disorder),0.444,Suspicious
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#42732,42732,Atrial flutter Atrial flutter,http://snomed.info/id/428076002,428076002,History of atrial flutter,0.704,OK
+icd9#42732,42732,Atrial flutter Atrial flutter,http://snomed.info/id/428076002,428076002,History of atrial flutter,0.704,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#3142,3142,Hyperkinetic conduct dis Hyperkinetic conduct disorder,http://snomed.info/id/192132008,192132008,Hyperkinetic conduct disorder (disorder),0.761,OK
+icd9#3321,3321,Secondary parkinsonism Secondary parkinsonism,http://snomed.info/id/230292008,230292008,Secondary parkinsonism (disorder),0.711,OK
+icd9#412,412,Old myocardial infarct Old myocardial infarction,http://snomed.info/id/161502000,161502000,H/O: myocardial infarct at less than 60,0.612,Suspicious
+icd9#4239,4239,Pericardial disease NOS Unspecified disease of pericardium,http://snomed.info/id/3238004,3238004,Pericarditis (disorder),0.456,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#8961,8961,"Amput foot, unilat-compl Traumatic amputation of foot (complete) (partial), unilateral, complicated",http://snomed.info/id/95859009,95859009,Traumatic amputation of foot (disorder),0.516,Suspicious
+icd9#4271,4271,Parox ventric tachycard Paroxysmal ventricular tachycardia,http://snomed.info/id/21421000119109,21421000119109,Nonsustained paroxysmal ventricular tachycardia,0.762,OK
+icd9#41410,41410,Aneurysm of heart Aneurysm of heart (wall),http://snomed.info/id/65340007,65340007,Aneurysm of heart wall,0.710,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#586,586,"Renal failure NOS Renal failure, unspecified",http://snomed.info/id/301814009,301814009,Post-renal renal failure (disorder),0.587,Suspicious
+icd9#4240,4240,Mitral valve disorder Mitral valve disorders,http://snomed.info/id/11851006,11851006,Mitral valve disorder (disorder),0.811,OK
+icd9#8674,8674,"Uterus injury-closed Injury to uterus, without mention of open wound into cavity",http://snomed.info/id/83276000,83276000,Injury of uterus with open wound into abdominal cavity,0.652,OK
+icd9#42830,42830,"Diastolc hrt failure NOS Diastolic heart failure, unspecified",http://snomed.info/id/609555007,609555007,Diastolic heart failure stage A (finding),0.606,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#7851,7851,Palpitations Palpitations,http://snomed.info/id/161966006,161966006,No palpitations (situation),0.800,OK
+icd9#8960,8960,"Amputation foot, unilat Traumatic amputation of foot (complete) (partial), unilateral, without mention of complication",http://snomed.info/id/36211009,36211009,Bilateral traumatic amputation of feet without complication,0.635,Suspicious
+icd9#42731,42731,Atrial fibrillation Atrial fibrillation,http://snomed.info/id/134377004,134377004,Atrial fibrillation monitoring,0.696,OK
+icd9#4254,4254,Prim cardiomyopathy NEC Other primary cardiomyopathies,http://snomed.info/id/89461002,89461002,Primary cardiomyopathy (disorder),0.565,Suspicious
+icd9#42833,42833,Ac on chr diast hrt fail Acute on chronic diastolic heart failure,http://snomed.info/id/153951000119103,153951000119103,Acute on chronic combined systolic and diastolic heart failure,0.661,OK
+icd9#8674,8674,"Uterus injury-closed Injury to uterus, without mention of open wound into cavity",http://snomed.info/id/83276000,83276000,Injury of uterus with open wound into abdominal cavity,0.652,OK
+icd9#3612,3612,Serous retina detachment Serous retinal detachment,http://snomed.info/id/38599001,38599001,Serous retinal detachment (disorder),0.714,OK
+icd9#3142,3142,Hyperkinetic conduct dis Hyperkinetic conduct disorder,http://snomed.info/id/192132008,192132008,Hyperkinetic conduct disorder (disorder),0.761,OK
+icd9#3734,3734,Infect derm lid w deform Infective dermatitis of eyelid of types resulting in deformity,http://snomed.info/id/71577007,71577007,Infective dermatitis of eyelid resulting in deformity,0.757,OK
+icd9#3950,3950,Rheumat aortic stenosis Rheumatic aortic stenosis,http://snomed.info/id/72011007,72011007,Rheumatic aortic stenosis,0.676,OK
+icd9#42823,42823,Ac on chr syst hrt fail Acute on chronic systolic heart failure,http://snomed.info/id/153951000119103,153951000119103,Acute on chronic combined systolic and diastolic heart failure,0.640,Suspicious
+icd9#3612,3612,Serous retina detachment Serous retinal detachment,http://snomed.info/id/38599001,38599001,Serous retinal detachment (disorder),0.714,OK
+icd9#42833,42833,Ac on chr diast hrt fail Acute on chronic diastolic heart failure,http://snomed.info/id/153951000119103,153951000119103,Acute on chronic combined systolic and diastolic heart failure,0.661,OK
+icd9#3612,3612,Serous retina detachment Serous retinal detachment,http://snomed.info/id/38599001,38599001,Serous retinal detachment (disorder),0.714,OK
+icd9#3348,3348,Spinocerebellar dis NEC Other spinocerebellar diseases,http://snomed.info/id/91502009,91502009,Spinocerebellar disease (disorder),0.628,Suspicious
+icd9#4131,4131,Prinzmetal angina Prinzmetal angina,http://snomed.info/id/87343002,87343002,Prinzmetal angina (disorder),0.656,OK
+icd9#3961,3961,Mitral stenos/aort insuf Mitral valve stenosis and aortic valve insufficiency,http://snomed.info/id/81552002,81552002,Rheumatic mitral valve insufficiency and aortic valve stenosis,0.623,Suspicious
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#4148,4148,Chr ischemic hrt dis NEC Other specified forms of chronic ischemic heart disease,http://snomed.info/id/413838009,413838009,Chronic ischemic heart disease,0.545,Suspicious
+icd9#3950,3950,Rheumat aortic stenosis Rheumatic aortic stenosis,http://snomed.info/id/72011007,72011007,Rheumatic aortic stenosis,0.676,OK
+icd9#412,412,Old myocardial infarct Old myocardial infarction,http://snomed.info/id/161502000,161502000,H/O: myocardial infarct at less than 60,0.612,Suspicious
+icd9#4259,4259,"Second cardiomyopath NOS Secondary cardiomyopathy, unspecified",http://snomed.info/id/415509000,415509000,Secondary restrictive cardiomyopathy (disorder),0.566,Suspicious
+icd9#41511,41511,Iatrogen pulm emb/infarc Iatrogenic pulmonary embolism and infarction,http://snomed.info/id/1001000119102,1001000119102,Pulmonary embolism with pulmonary infarction,0.589,Suspicious
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
+icd9#3492,3492,"Disorder of meninges NEC Disorders of meninges, not elsewhere classified",http://snomed.info/id/15758002,15758002,Disorder of meninges (disorder),0.580,Suspicious
+icd9#9962,9962,"Malfun neuro device/graf Mechanical complication of nervous system device, implant, and graft",http://snomed.info/id/16411000,16411000,"Mechanical complication of nervous system device, implant AND/OR graft",0.835,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#4241,4241,Aortic valve disorder Aortic valve disorders,http://snomed.info/id/8722008,8722008,Aortic valve disorder (disorder),0.811,OK
+icd9#9671,9671,Poisoning-chloral hydrat Poisoning by chloral hydrate group,http://snomed.info/id/57628003,57628003,Poisoning caused by chloral hydrate,0.667,OK
+icd9#9604,9604,Poisoning-tetracycline Poisoning by tetracycline group,http://snomed.info/id/212505002,212505002,Tetracycline poisoning (disorder),0.619,Suspicious
