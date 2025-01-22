@@ -11,7 +11,8 @@ class CrossOntologyAligner:
         self.clusters = clusters
         self.embeddingModel = embeddingModel
 
-    def transcribe(self, query: rdflib.Graph, Invoker: str, Threshold=0.8) -> rdflib.Graph:
+    def transcribe(self, query: rdflib.Graph, Invoker: str, Threshold=0.8, Namespace="http://example.org/sphn#") -> rdflib.Graph:
+        self.CustomNameSpace = Namespace
         alignedEntities = self._align(query, Invoker, Threshold)
         if len(alignedEntities) == 0:
             raise TypeError("NullPointerException")
@@ -27,7 +28,8 @@ class CrossOntologyAligner:
                     transcribedGraph.add((s, p, o))
         return transcribedGraph 
 
-    def merge(self, query: rdflib.Graph, Invoker: str, Threshold=0.8) -> rdflib.Graph:
+    def merge(self, query: rdflib.Graph, Invoker: str, Threshold=0.8, Namespace="http://example.org/sphn#") -> rdflib.Graph:
+        self.CustomNameSpace = Namespace
         alignedEntities = self._align(query, Invoker, Threshold)
         if len(alignedEntities) == 0:
             raise TypeError("NullPointerException")
@@ -46,11 +48,12 @@ class CrossOntologyAligner:
         try:
             logging.info("Starting alignment process.")
             logging.debug("Invoking remote method '%s' with the query graph.", Invoker)
-            runnable = GraphInvoker(embeddingModel=self.embeddingModel)
-            queryEmbeddingGraph, namespace = runnable.remoteInvoker(Invoker, query)
+            runnable = GraphInvoker(embeddingModel=self.embeddingModel, namespace=self.CustomNameSpace)
+            queryEmbeddingGraph = runnable.remoteInvoker(Invoker, query)
 
             if len(queryEmbeddingGraph) == 0:
                 logging.info("No entities to align found in query.")
+                raise TypeError("Valid Query Entities are Null")
             if self.clusterCentroids is None:
                 logging.info("Precomputing cluster centroids.")
                 self.precompute_centroids()
@@ -106,7 +109,7 @@ class CrossOntologyAligner:
 
                 if best_similarity >= candidateThreshold:
                     logging.info("Matched query '%s' with '%s' : %.2f", querySubject, best_candidate_subject, best_similarity)
-                    alignedGraph.add((querySubject, "snomed:", best_candidate_subject))
+                    alignedGraph.add((querySubject, self.CustomNameSpace, best_candidate_subject))
 
             logging.info("Fine-grained comparison completed. Returning aligned graph.")
             return alignedGraph
