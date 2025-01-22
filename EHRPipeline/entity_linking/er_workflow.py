@@ -192,7 +192,7 @@ def save_clusters_to_csv(clusters, output_csv):
             ])
 
 def main():
-     Load SNOMED data, create token index, do block cleaning
+     # Load SNOMED data, create token index, do block cleaning
     concept_dict = parse_snomed_turtle(SNOMED_TTL_FILE)
     raw_index = build_token_index(concept_dict)
     cleaned_index = block_cleaning(raw_index, max_size=2000)
