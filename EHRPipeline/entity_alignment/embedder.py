@@ -6,6 +6,7 @@ from sklearn.cluster import KMeans
 import numpy as np
 import logging
 import rdflib
+import os
 
 class GraphEmbedder(ABC):
     def __init__(self, embeddingModel):
