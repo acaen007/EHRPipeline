@@ -111,4 +111,14 @@ def merge_ontology_and_data():
     Merges the base SPHN ontology snippet from a file (initialsphn.ttl)
     with additional data (enhanced_triples_sample.ttl) into a single graph.
     """
+    g = rdflib.Graph()
+
+    g.parse("initialsphn.ttl", format="turtle")
+
+    g.parse("enhanced_sphn_triples_sample_FINAL.ttl", format="turtle")
+
+    g.serialize(destination="merged_ontology.ttl", format="turtle")
+
+    print("Merging completed! Saved as 'merged_ontology.ttl'.")
+
   
