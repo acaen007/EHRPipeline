@@ -7,7 +7,7 @@ request == 2.31.0
 joblib == 1.4.2
 
 # Fact Validation
- SPARQLWrapper == 2.0.0
+SPARQLWrapper == 2.0.0
  
 # Graph specific packages
 rdflib == 7.1.1

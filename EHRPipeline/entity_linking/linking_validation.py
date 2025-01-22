@@ -90,16 +90,16 @@ def load_icd_descriptions(csv_path):
     return icd_dict
 
 
-def parse_snomed_turtle(ttl_path):
+def parse_snomed_turtle(g):
     """
     Loads the SNOMED TTL file into an RDF graph, then builds and returns
     a dictionary of:
     
         concept_to_labels[snomed_id] = [list of labels]
     """
-    print("Parsing SNOMED TTL:", ttl_path)
-    g = Graph()
-    g.parse(ttl_path, format="turtle")
+    # print("Parsing SNOMED TTL:", ttl_path)
+    # g = Graph()
+    # g.parse(ttl_path, format="turtle")
     print(f"Graph has {len(g)} RDF triples.\n")
 
     concept_to_labels = {}
@@ -149,7 +149,7 @@ def parse_icd_snomed_links(xml_file):
     return links
 
 
-def main():
+def LinkingValidator(KG):
     # 1) Load the ICD descriptions from CSV
     icd_descriptions = load_icd_descriptions(ICD_CSV)
 
@@ -157,7 +157,7 @@ def main():
     snomed_labels = parse_snomed_turtle(SNOMED_TTL)
 
     # 3) Parse the XML file for ICD->SNOMED links
-    links = parse_icd_snomed_links(INPUT_XML)
+    links = parse_icd_snomed_links(KG)
     print(f"Found {len(links)} ICD->SNOMED links in the XML.\n")
 
     # 4) For each link, find the best matching SNOMED label and compute similarity.
@@ -223,5 +223,5 @@ def main():
     print(f"Similarity results written to '{OUTPUT_CSV}'.\nDone.")
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
