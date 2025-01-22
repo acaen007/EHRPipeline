@@ -34,16 +34,13 @@ class CrossOntologyAligner:
         if len(alignedEntities) == 0:
             raise TypeError("NullPointerException")
         
-        transcribedGraph = rdflib.Graph()
+        for subject in alignedEntities.subjects():
+            if subject in query.subjects():
+                for predicate, obj in alignedEntities.predicate_objects(subject):
+                    if (subject, predicate, obj) not in query:
+                        query.add((subject, predicate, obj))
 
-        for subject in query.subjects():
-            if subject in alignedEntities.subjects():
-                for p, o in alignedEntities.predicate_objects(subject):
-                    transcribedGraph.add((subject, p, o))
-            for p, o in query.predicate_objects(subject):
-                transcribedGraph.add((subject, p, o))
-        return transcribedGraph
-
+        return query
     def _align(self, query: rdflib.Graph, Invoker: str, candidateThreshold=0.8) -> rdflib.Graph:
         try:
             logging.info("Starting alignment process.")
