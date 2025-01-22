@@ -1,0 +1,150 @@
+id,description,matched_snomed,similarity_score
+1,Cardiomyopathy in diseases classified elsewhere,No match,0.00
+2,Acute subendocardial myocardial infarction,311796008,0.87
+3,Atherosclerotic heart disease of native coronary artery,443502000,0.74
+4,Unspecified angina pectoris,194828000,0.74
+5,Nonrheumatic aortic (valve) stenosis,429347004,0.88
+6,"Congestive heart failure, unspecified",67441000119101,0.82
+7,ST elevation (STEMI) myocardial infarction involving left main coronary artery,15713081000119108,0.88
+8,Atherosclerotic heart disease of native coronary artery with unstable angina pectoris,No match,0.00
+9,"Atrial fibrillation, unspecified",49436004,0.76
+10,Acute on chronic diastolic heart failure,443344007,1.00
+11,Atherosclerotic heart disease of native coronary artery without angina pectoris,No match,0.00
+12,Nonrheumatic aortic valve insufficiency,43121002,0.89
+13,Other pulmonary heart diseases,49584005,0.88
+14,"Atrial flutter, unspecified",15964901000119107,0.79
+15,Unspecified systolic (congestive) heart failure,698594003,0.77
+16,Acute myocardial infarction of left main coronary artery,17531000119105,0.83
+17,Acute myocardial infarction of other lateral wall,15990001,0.95
+18,Supraventricular tachycardia,6456007,1.00
+19,Other specified heart block,27885002,0.71
+20,Other forms of chronic ischemic heart disease,413838009,0.80
+21,Unspecified disease of pericardium,419840005,0.71
+22,Other specified cardiac arrhythmias,1230406008,0.75
+23,"Atrioventricular block, first degree",270492004,0.86
+24,Other and unspecified angina pectoris,No match,0.00
+25,Sick sinus syndrome,36083008,1.00
+26,"Atrioventricular block, second degree",195042002,0.87
+27,Acute myocardial infarction involving right coronary artery,23311000119105,0.82
+28,Old myocardial infarction,1755008,1.00
+29,"Atrioventricular block, complete",233917008,0.83
+30,Primary pulmonary hypertension,697896007,0.89
+31,Left ventricular failure,85232009,1.00
+32,Chronic systolic (congestive) heart failure,88805009,0.88
+33,Pulmonary embolism without acute cor pulmonale,1001000119102,0.72
+34,Ventricular fibrillation,71908006,1.00
+35,Acute myocardial infarction involving right coronary artery,23311000119105,0.82
+36,Acute and subacute bacterial endocarditis,266237004,1.00
+37,Hypertrophic obstructive cardiomyopathy,45227007,1.00
+38,Acute combined systolic (congestive) and diastolic heart failure,153931000119109,0.90
+39,Acute systolic (congestive) heart failure,10633002,0.87
+40,Acute diastolic heart failure,443343001,1.00
+41,"Cardiac arrhythmia, unspecified",698247007,0.75
+42,"Acute myocardial infarction, unspecified",703212004,0.82
+43,Acute on chronic systolic (congestive) heart failure,698296002,0.90
+44,Acute myocardial infarction involving other inferior wall,73795002,0.85
+45,Unspecified diastolic heart failure,443343001,0.81
+46,Unspecified combined systolic (congestive) and diastolic heart failure,153931000119109,0.81
+47,ST elevation (STEMI) myocardial infarction involving other lateral wall,15712841000119100,0.76
+48,Other pulmonary embolism without acute cor pulmonale,No match,0.00
+49,Other specified diseases of pericardium,No match,0.00
+50,Acute myocardial infarction involving other anterior wall,54329005,0.85
+51,Hemopericardium,23412002,1.00
+52,Acute pericarditis,15555002,1.00
+53,Chronic diastolic (congestive) heart failure,88805009,0.86
+54,First degree atrioventricular block,270492004,1.00
+55,Other restrictive cardiomyopathy,415295002,0.90
+56,"Bradycardia, unspecified",42177007,0.73
+57,Pre-excitation syndrome,16797001,1.00
+58,"Endocarditis, valve unspecified",No match,0.00
+59,Coronary atherosclerosis due to calcified coronary lesion,427919004,0.75
+60,Coronary atherosclerosis due to lipid-rich plaque,427919004,0.76
+61,Complete heart block,27885002,1.00
+62,"Paroxysmal tachycardia, unspecified",12026006,0.79
+63,Coronary atherosclerosis of native coronary artery with unstable angina,15960661000119107,0.79
+64,Other and unspecified atrioventricular block,27885002,0.76
+65,Unspecified chronic pulmonary heart disease,79955004,0.84
+66,Other specified diseases of pulmonary circulation,39785005,0.71
+67,Nonrheumatic aortic stenosis with insufficiency,17759006,0.97
+68,"Heart disease, unspecified",394926003,0.77
+69,Acute on chronic combined systolic and diastolic heart failure,153951000119103,1.00
+70,Acute myocardial infarction involving other inferior wall,73795002,0.85
+71,"Acute pericarditis, unspecified",194909006,0.79
+72,Mobitz type II atrioventricular block,28189009,1.00
+73,Acute nonspecific pericarditis,266235007,1.00
+74,Acute myocardial infarction involving right coronary artery,23311000119105,0.82
+75,Acute myocardial infarction involving other inferior wall,73795002,0.85
+76,Other forms of angina pectoris,161504004,0.79
+77,Other specified heart diseases,394886001,0.75
+78,Coronary atherosclerosis due to native coronary artery,427919004,0.75
+79,"Ventricular aneurysm, acquired",90539001,0.83
+80,Pericardial effusion (noninflammatory),194970009,0.99
+81,Other specified heart diseases,394886001,0.75
+82,"Heart disease, unspecified",394926003,0.77
+83,Acute myocardial infarction of left main coronary artery,17531000119105,0.83
+84,"Acute myocardial infarction, unspecified",703212004,0.82
+85,Other complications of heart disease,213235004,0.70
+86,Unstable angina,4557003,1.00
+87,"Left bundle-branch block, unspecified",63467002,0.78
+88,Cardiomyopathy in diseases classified elsewhere,No match,0.00
+89,"Heart disease, unspecified",394926003,0.77
+90,Constrictive pericarditis,85598007,1.00
+91,Other specified heart diseases,394886001,0.75
+92,Other and unspecified atrioventricular block,27885002,0.76
+93,Other specified cardiac arrhythmias,1230406008,0.75
+94,Sick sinus syndrome,36083008,1.00
+95,Coronary atherosclerosis of native coronary artery with stable angina,15960661000119107,0.77
+96,Other complications of heart disease,213235004,0.70
+97,"Cardiac arrhythmia, unspecified",698247007,0.75
+98,Cardiomyopathy due to drug and external agent,72972005,0.73
+99,Acute nonspecific pericarditis,266235007,1.00
+100,Other specified disorders of heart,128238001,0.71
+101,"Ventricular aneurysm, acquired",90539001,0.83
+102,Other chronic pulmonary heart diseases,79955004,0.90
+103,"Bundle-branch block, unspecified",6374002,0.73
+104,Chronic combined systolic and diastolic heart failure,153941000119100,1.00
+105,Other diseases of pericardium,265487002,0.73
+106,Acute myocardial infarction involving left anterior descending coronary artery,285981000119103,0.88
+107,Acute myocardial infarction involving other inferior wall,73795002,0.85
+108,Other specified cardiac arrhythmias,1230406008,0.75
+109,Other cardiomyopathies,No match,0.00
+110,"Conduction disorder, unspecified",No match,0.00
+111,Other specified conduction disorders,No match,0.00
+112,"Cardiomyopathy, unspecified",195029002,0.76
+113,"Heart failure, unspecified",395105005,0.79
+114,Old myocardial infarction,1755008,1.00
+115,Saddle embolus of pulmonary artery without acute cor pulmonale,15964701000119109,0.98
+116,"Atherosclerosis of coronary artery bypass graft(s), unspecified",429673002,0.85
+117,"Acute endocarditis, unspecified",91357005,0.75
+118,Acute myocardial infarction involving other anterior wall,54329005,0.85
+119,Pulmonary valve stenosis,56786000,1.00
+120,"Ventricular aneurysm, acquired",90539001,0.83
+121,Right bundle-branch block,59118001,0.98
+122,"Heart disease, unspecified",394926003,0.77
+123,Other specified atrioventricular block,28189009,0.80
+124,"Rheumatic heart disease, unspecified",23685000,0.79
+125,Other pulmonary embolism,200284000,0.88
+126,Aneurysm of pulmonary artery,194892009,1.00
+127,Idiopathic myocarditis,91025000,1.00
+128,Atherosclerosis of coronary artery bypass graft,429673002,0.97
+129,ST elevation (STEMI) myocardial infarction involving other coronary artery of anterior wall,15713081000119108,0.72
+130,Angina pectoris with documented spasm,23687008,1.00
+131,Atherosclerosis of bypass graft,442439008,0.89
+132,Ventricular tachycardia,25569003,1.00
+133,"ST elevation myocardial infarction, site unspecified",401303003,0.74
+134,Paroxysmal supraventricular tachycardia,67198005,1.00
+135,"Chronic ischemic heart disease, unspecified",413838009,0.83
+136,Cardiomyopathy in diseases classified elsewhere,No match,0.00
+137,Acute myocarditis,46701001,1.00
+138,Arteriovenous fistula of pulmonary vessels,111289009,1.00
+139,Other ill-defined heart diseases,61179004,0.72
+140,Other pulmonary heart disease,49584005,0.90
+141,Hypertrophic obstructive cardiomyopathy,45227007,1.00
+142,Non-ST elevation (NSTEMI) myocardial infarction,401303003,0.80
+143,Syphilitic aortitis,20735004,1.00
+144,Saddle embolus of pulmonary artery without acute cor pulmonale,15964701000119109,0.98
+145,Other and unspecified atrioventricular block,27885002,0.76
+146,Coronary atherosclerosis of bypass graft,429673002,0.80
+147,STEMI involving right coronary artery,876856005,0.80
+148,STEMI involving other coronary artery of anterior wall,No match,0.00
+149,Nonrheumatic mitral valve disorder,708121009,0.90
