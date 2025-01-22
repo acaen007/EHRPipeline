@@ -4,7 +4,6 @@ numpy == 2.0.2
 pandas == 2.2.3
 tqdm == 4.66.2
 request == 2.31.0
-joblib == 1.4.2
 
 # Fact Validation
 SPARQLWrapper == 2.0.0

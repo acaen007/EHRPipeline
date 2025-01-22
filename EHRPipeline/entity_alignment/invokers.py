@@ -23,7 +23,7 @@ class Invoker(abc.ABC):
 
     def loadModule(self, id: str) -> pd.DataFrame:
         paths = { # add ID and file path to the mapping 
-            "icd9": "../data/D_ICD_DIAGNOSES.csv",
+            "icd9": "data/D_ICD_DIAGNOSES.csv",
             "labresults" : "data/D_LABITEMS.csv"
         }
         if id not in paths:
@@ -32,11 +32,11 @@ class Invoker(abc.ABC):
         try:
             dataframe = pd.read_csv(paths[id])
         except FileNotFoundError:
-            raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+            raise FileNotFoundError(f"The file '{paths[id]}' does not exist.")
         except pd.errors.EmptyDataError:
-            raise ValueError(f"The file '{file_path}' is empty or corrupted.")
+            raise ValueError(f"The file '{paths[id]}' is empty or corrupted.")
         except Exception as e:
-            raise RuntimeError(f"An error occurred while loading the file '{file_path}': {e}")
+            raise RuntimeError(f"An error occurred while loading the file '{paths[id]}': {e}")
         return dataframe
 
 ###############################################################################
