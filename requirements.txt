@@ -3,11 +3,9 @@ pip == 24.3.1
 numpy == 2.0.2
 pandas == 2.2.3
 tqdm == 4.66.2
-request == 2.31.0
-joblib == 1.4.2
 
 # Fact Validation
- SPARQLWrapper == 2.0.0
+SPARQLWrapper == 2.0.0
  
 # Graph specific packages
 rdflib == 7.1.1
@@ -17,4 +15,5 @@ pykeen == 1.11.0
 torch == 2.3.0
 scipy == 1.13.1
 sentence_transformers == 3.3.1
+Levenshtein == 0.26.1
 

@@ -8,40 +8,111 @@ from rdflib import Graph, URIRef, Literal
 from rdflib.namespace import RDFS, SKOS
 
 # Files and thresholds
-INPUT_XML = "SNOMEDANDICD_results.xml"   
+INPUT_XML = "SNOMEDANDICD_results.xml"
 ICD_CSV = "D_ICD_DIAGNOSES.csv"          # Contains ICD codes and their descriptions
 SNOMED_TTL = "snomed-ct-20221231-mini.ttl"
 OUTPUT_CSV = "icd_snomed_validation.csv"
-SIM_THRESHOLD = 0.7
+
+# We keep the same general threshold for the composite similarity
+SIM_THRESHOLD = 0.5
 
 
 def normalize(text):
     """
-    Takes a string, lowercases it, removes punctuation, and trims whitespace.
-    Used to standardize text before computing similarity.
+    We'll keep this straightforward: turn everything lowercase,
+    remove punctuation, and trim spaces. That should help standardize text.
     """
     if not text:
         return ""
-    # Make everything lowercase
     text = text.lower()
-    # Remove punctuation
     text = text.translate(str.maketrans("", "", string.punctuation))
-    # Trim extra whitespace
     return text.strip()
 
 
 def levenshtein_similarity(a, b):
     """
-    Wraps Levenshtein.ratio to compute the similarity ratio
-    between two strings a and b. Values range from 0 to 1.
+    This is your existing string similarity method (ratio).
+    Basically returns a value from 0.0 to 1.0.
     """
     return Levenshtein.ratio(a, b)
 
 
+def tokenize(text):
+    """
+    Let's split on whitespace to get tokens, then
+    remove any leftover empty strings. We could add
+    additional logic if needed, but let's keep it simple.
+    """
+    if not text:
+        return []
+    return [t for t in text.split() if t]
+
+
+def weighted_jaccard_similarity(text_a, text_b):
+    """
+    This function tries to capture the notion of Weighted Jaccard that appears
+    often in entity resolution works. The idea is to see how token frequencies
+    overlap, instead of just checking set membership.
+
+    We'll build frequency dicts for each text, then sum(min(freqA, freqB)) / sum(max(freqA, freqB)).
+
+    If either text is empty, we just return 0.0
+    """
+    if not text_a or not text_b:
+        return 0.0
+
+    # Tokenize
+    tokens_a = tokenize(text_a)
+    tokens_b = tokenize(text_b)
+
+    # Count frequencies
+    freq_a = {}
+    freq_b = {}
+
+    for tok in tokens_a:
+        freq_a[tok] = freq_a.get(tok, 0) + 1
+    for tok in tokens_b:
+        freq_b[tok] = freq_b.get(tok, 0) + 1
+
+    # Gather union of all tokens
+    all_tokens = set(freq_a.keys()).union(set(freq_b.keys()))
+    if not all_tokens:
+        return 0.0
+
+    sum_min = 0
+    sum_max = 0
+    for tok in all_tokens:
+        sum_min += min(freq_a.get(tok, 0), freq_b.get(tok, 0))
+        sum_max += max(freq_a.get(tok, 0), freq_b.get(tok, 0))
+
+    if sum_max == 0:
+        return 0.0
+    return float(sum_min) / float(sum_max)
+
+
+def composite_similarity(icd_text, snomed_text, alpha=0.5):
+    """
+    Combine Weighted Jaccard and Levenshtein into a single metric.
+    alpha controls how much weight is given to Weighted Jaccard.
+    (1 - alpha) is the weight of Levenshtein similarity.
+
+    If alpha=0.5, it balances both similarity metrics equally.
+    """
+    # normalize the inputs
+    norm_icd = normalize(icd_text)
+    norm_snomed = normalize(snomed_text)
+
+    lev_sim = levenshtein_similarity(norm_icd, norm_snomed)
+    jaccard_sim = weighted_jaccard_similarity(norm_icd, norm_snomed)
+
+    # Weighted linear combination
+    return alpha * jaccard_sim + (1 - alpha) * lev_sim
+
+
 def extract_snomed_id(uri):
     """
-    Given a SNOMED URI (e.g., 'http://snomed.info/id/212505002'),
-    extract the final numeric part (e.g., '212505002').
+    Given a SNOMED URI like 'http://snomed.info/id/212505002',
+    we want to snag the trailing numeric portion.
     """
     match = re.search(r"/id/(\d+)$", uri)
     if match:
@@ -51,10 +122,8 @@ def extract_snomed_id(uri):
 
 def extract_icd9_code(raw):
     """
-    Parses out the actual ICD code from a string like 'icd9#412' or 'icd10#AB123'.
-    For example:
-        'icd9#412' -> '412'
-        'icd10#AB123' -> 'AB123'
+    Grab the real ICD code from something like 'icd9#412' or 'icd10#AB123'.
+    We'll keep the pattern simple with 'icd9#' or 'icd10#'.
     """
     pattern = r"(?:icd9#|icd10#)(.*)"
     match = re.match(pattern, raw, flags=re.IGNORECASE)
@@ -65,16 +134,8 @@ def extract_icd9_code(raw):
 
 def load_icd_descriptions(csv_path):
     """
-    Reads the CSV file containing ICD codes and their short/long descriptions.
-    
-    Returns a dictionary:
-    {
-        'ICD_CODE': {
-            'short': <short description>,
-            'long':  <long description>
-        },
-        ...
-    }
+    Read the CSV that has ICD codes + short & long descriptions.
+    We return a dict with the code as key, and short/long as separate strings.
     """
     icd_dict = {}
     with open(csv_path, "r", encoding="utf-8") as f:
@@ -92,42 +153,37 @@ def load_icd_descriptions(csv_path):
 
 def parse_snomed_turtle(ttl_path):
     """
-    Loads the SNOMED TTL file into an RDF graph, then builds and returns
-    a dictionary of:
-    
-        concept_to_labels[snomed_id] = [list of labels]
+    Loads the SNOMED TTL file into an RDF Graph. Then we'll grab labels from
+    RDFS.label, SKOS.altLabel, or SKOS.prefLabel. We'll store them in a dict:
+       concept_to_labels[snomed_id] = [ label1, label2, ... ]
     """
-    print("Parsing SNOMED TTL:", ttl_path)
+    print("Loading SNOMED TTL:", ttl_path)
     g = Graph()
     g.parse(ttl_path, format="turtle")
-    print(f"Graph has {len(g)} RDF triples.\n")
+    print(f"Cool, the graph has {len(g)} RDF triples.\n")
 
     concept_to_labels = {}
     label_predicates = [RDFS.label, SKOS.altLabel, SKOS.prefLabel]
 
-    for subject, predicate, obj in g:
-        if predicate in label_predicates and isinstance(subject, URIRef) and isinstance(obj, Literal):
-            snomed_id = extract_snomed_id(str(subject))
+    for s, p, o in g:
+        if p in label_predicates and isinstance(s, URIRef) and isinstance(o, Literal):
+            snomed_id = extract_snomed_id(str(s))
             if snomed_id:
-                concept_to_labels.setdefault(snomed_id, []).append(str(obj))
+                concept_to_labels.setdefault(snomed_id, []).append(str(o))
 
-    print(f"Extracted {len(concept_to_labels)} SNOMED concepts.\n")
+    print(f"Extracted label info for {len(concept_to_labels)} SNOMED concepts.\n")
     return concept_to_labels
 
 
 def parse_icd_snomed_links(xml_file):
     """
-    Reads the XML file containing ICD->SNOMED links. The XML has entries like:
-        <Description>
-            <hasCode>icd9#412</hasCode>
-            <Linked rdf:resource="http://snomed.info/id/212505002" />
-        </Description>
-    This function returns a list of dictionaries, each containing:
-    
+    We look for <Description> elements that have <hasCode> and <Linked rdf:resource=...>.
+    We'll make a list like:
         {
             'icd_raw': 'icd9#412',
             'snomed_uri': 'http://snomed.info/id/212505002'
         }
+    so we can process them later.
     """
     tree = ET.parse(xml_file)
     root = tree.getroot()
@@ -150,21 +206,20 @@ def parse_icd_snomed_links(xml_file):
 
 
 def main():
-    # 1) Load the ICD descriptions from CSV
+    # 1) Load ICD descriptions
     icd_descriptions = load_icd_descriptions(ICD_CSV)
 
-    # 2) Build a dictionary of SNOMED concept -> label(s)
+    # 2) Parse SNOMED TTL for concept->label(s)
     snomed_labels = parse_snomed_turtle(SNOMED_TTL)
 
-    # 3) Parse the XML file for ICD->SNOMED links
+    # 3) Parse the XML with ICD->SNOMED pairs
     links = parse_icd_snomed_links(INPUT_XML)
-    print(f"Found {len(links)} ICD->SNOMED links in the XML.\n")
+    print(f"Found {len(links)} ICD->SNOMED mappings in the XML.\n")
 
-    # 4) For each link, find the best matching SNOMED label and compute similarity.
-    #    Finally, write the results to a CSV file for further review.
+    # 4) We'll combine Weighted Jaccard and Levenshtein for a more thorough similarity.
+    #    We'll store the best label match for each SNOMED concept.
     with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f_out:
         writer = csv.writer(f_out)
-        # Write header row
         writer.writerow([
             "icd_raw",
             "icd_extracted",
@@ -172,7 +227,7 @@ def main():
             "snomed_uri",
             "snomed_extracted",
             "best_snomed_label",
-            "similarity",
+            "composite_similarity",
             "verdict"
         ])
 
@@ -180,35 +235,31 @@ def main():
             icd_raw_value = link["icd_raw"]
             snomed_uri_value = link["snomed_uri"]
 
-            # Extract the ICD and SNOMED codes/IDs
+            # Extract codes/IDs
             icd_code = extract_icd9_code(icd_raw_value)
             snomed_id = extract_snomed_id(snomed_uri_value)
 
-            # Build ICD text by concatenating its short and long descriptions
+            # Build a text from short+long desc
             icd_text = ""
             if icd_code and icd_code in icd_descriptions:
                 short_t = icd_descriptions[icd_code]["short"]
                 long_t = icd_descriptions[icd_code]["long"]
                 icd_text = f"{short_t} {long_t}".strip()
 
-            # Gather all SNOMED labels associated with this concept
+            # Candidate labels for SNOMED
             candidate_labels = snomed_labels.get(snomed_id, []) if snomed_id else []
 
-            # Find the label with the highest similarity to the ICD description
-            best_similarity = 0.0
+            # Find the label with highest composite similarity
+            best_sim = 0.0
             best_label = ""
-            normalized_icd = normalize(icd_text)
             for label in candidate_labels:
-                normalized_label = normalize(label)
-                sim_score = levenshtein_similarity(normalized_icd, normalized_label)
-                if sim_score > best_similarity:
-                    best_similarity = sim_score
+                sim = composite_similarity(icd_text, label, alpha=0.5)
+                if sim > best_sim:
+                    best_sim = sim
                     best_label = label
 
-            # If similarity passes the threshold, we mark it as "OK" else "Suspicious"
-            verdict = "OK" if best_similarity >= SIM_THRESHOLD else "Suspicious"
+            verdict = "OK" if best_sim >= SIM_THRESHOLD else "Suspicious"
 
-            # Write everything to CSV
             writer.writerow([
                 icd_raw_value,
                 icd_code if icd_code else "",
@@ -216,11 +267,11 @@ def main():
                 snomed_uri_value,
                 snomed_id if snomed_id else "",
                 best_label,
-                f"{best_similarity:.3f}",
+                f"{best_sim:.3f}",
                 verdict
             ])
 
-    print(f"Similarity results written to '{OUTPUT_CSV}'.\nDone.")
+    print(f"Wrote the matching results to '{OUTPUT_CSV}'. All done!")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,10 @@
+<http://example.org/Diagnosis/10033/PATIENTS/112578>  <https://biomedit.ch/rdf/sphn-schema/sphn#hasCode>  <http://example.org/Code/icd9#25000>
+<http://example.org/Diagnosis/10033/PATIENTS/112578>  <https://biomedit.ch/rdf/sphn-schema/sphn#hasCode>  <http://example.org/Code/icd9#4019>
+<http://example.org/Diagnosis/10033/PATIENTS/112578>  <https://biomedit.ch/rdf/sphn-schema/sphn#hasCode>  <http://example.org/Code/icd9#311>
+<http://example.org/Diagnosis/10033/PATIENTS/112578>  <https://biomedit.ch/rdf/sphn-schema/sphn#hasCode>  <http://example.org/Code/icd9#5119>
+<http://example.org/Diagnosis/10033/PATIENTS/112578>  <https://biomedit.ch/rdf/sphn-schema/sphn#hasCode>  <http://example.org/Code/icd9#2859>
+<http://example.org/Diagnosis/10033/PATIENTS/112578>  <https://biomedit.ch/rdf/sphn-schema/sphn#hasCode>  <http://example.org/Code/icd9#5849>
+<http://example.org/Diagnosis/10033/PATIENTS/112578>  <https://biomedit.ch/rdf/sphn-schema/sphn#hasCode>  <http://example.org/Code/icd9#51881>
+<http://example.org/Diagnosis/10033/PATIENTS/112578>  <https://biomedit.ch/rdf/sphn-schema/sphn#hasCode>  <http://example.org/Code/icd9#7907>
+<http://example.org/Diagnosis/10033/PATIENTS/112578>  <https://biomedit.ch/rdf/sphn-schema/sphn#hasCode>  <http://example.org/Code/icd9#20300>
+<http://example.org/Diagnosis/10033/PATIENTS/112578>  <https://biomedit.ch/rdf/sphn-schema/sphn#hasCode>  <http://example.org/Code/icd9#2762>

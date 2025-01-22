@@ -11,7 +11,8 @@ class CrossOntologyAligner:
         self.clusters = clusters
         self.embeddingModel = embeddingModel
 
-    def transcribe(self, query: rdflib.Graph, Invoker: str, Threshold=0.8) -> rdflib.Graph:
+    def transcribe(self, query: rdflib.Graph, Invoker: str, Threshold=0.8, Namespace="http://example.org/sphn#") -> rdflib.Graph:
+        self.CustomNameSpace = Namespace
         alignedEntities = self._align(query, Invoker, Threshold)
         if len(alignedEntities) == 0:
             raise TypeError("NullPointerException")
@@ -27,30 +28,29 @@ class CrossOntologyAligner:
                     transcribedGraph.add((s, p, o))
         return transcribedGraph 
 
-    def merge(self, query: rdflib.Graph, Invoker: str, Threshold=0.8) -> rdflib.Graph:
+    def merge(self, query: rdflib.Graph, Invoker: str, Threshold=0.8, Namespace="http://example.org/sphn#") -> rdflib.Graph:
+        self.CustomNameSpace = Namespace
         alignedEntities = self._align(query, Invoker, Threshold)
         if len(alignedEntities) == 0:
             raise TypeError("NullPointerException")
         
-        transcribedGraph = rdflib.Graph()
+        for subject in alignedEntities.subjects():
+            if subject in query.subjects():
+                for predicate, obj in alignedEntities.predicate_objects(subject):
+                    if (subject, predicate, obj) not in query:
+                        query.add((subject, predicate, obj))
 
-        for subject in query.subjects():
-            if subject in alignedEntities.subjects():
-                for p, o in alignedEntities.predicate_objects(subject):
-                    transcribedGraph.add((subject, p, o))
-            for p, o in query.predicate_objects(subject):
-                transcribedGraph.add((subject, p, o))
-        return transcribedGraph
-
+        return query
     def _align(self, query: rdflib.Graph, Invoker: str, candidateThreshold=0.8) -> rdflib.Graph:
         try:
             logging.info("Starting alignment process.")
             logging.debug("Invoking remote method '%s' with the query graph.", Invoker)
-            runnable = GraphInvoker(embeddingModel=self.embeddingModel)
-            queryEmbeddingGraph, namespace = runnable.remoteInvoker(Invoker, query)
+            runnable = GraphInvoker(embeddingModel=self.embeddingModel, namespace=self.CustomNameSpace)
+            queryEmbeddingGraph = runnable.remoteInvoker(Invoker, query)
 
             if len(queryEmbeddingGraph) == 0:
                 logging.info("No entities to align found in query.")
+                raise TypeError("Valid Query Entities are Null")
             if self.clusterCentroids is None:
                 logging.info("Precomputing cluster centroids.")
                 self.precompute_centroids()
@@ -106,7 +106,7 @@ class CrossOntologyAligner:
 
                 if best_similarity >= candidateThreshold:
                     logging.info("Matched query '%s' with '%s' : %.2f", querySubject, best_candidate_subject, best_similarity)
-                    alignedGraph.add((querySubject, "snomed:", best_candidate_subject))
+                    alignedGraph.add((querySubject, self.CustomNameSpace, best_candidate_subject))
 
             logging.info("Fine-grained comparison completed. Returning aligned graph.")
             return alignedGraph
