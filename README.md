@@ -61,7 +61,12 @@ EHRPIPELINE
 1. **Prepare Input Data:**
    Ensure you have your input data (e.g., CSV files, ontology files) ready in the appropriate directories (e.g., `schema_mapping/`, `entity_linking/`, `data/`).
 
-2. **Run a Use Case:**
+2. **Import Ontology to GraphDB and Use That Environment:**
+    Import the ontology to your GraphDB repository and ensure the repository is running. For the ontology used in this toolkit, simply import `CustomOntology.ttl` into GraphDB. 
+
+    If using a different ontology, you may need to adapt the predictions from the TransE algorithm accordingly (e.g., modifying subject and predicate mappings as needed).
+
+3. **Run a Use Case:**
    Open and execute the example Jupyter Notebook `Pipeline_UseCase1.ipynb` to see the toolkit in action. You can use the notebook as a guide for running the individual components of the pipeline.
 
    To run the notebook:
@@ -69,7 +74,7 @@ EHRPIPELINE
    jupyter notebook Pipeline_UseCase1.ipynb
    ```
 
-3. **Run Individual Scripts:**
+4. **Run Individual Scripts:**
    Each component of the pipeline can be executed individually. For example, to cross-ontology alignment:
    ```bash
    python EHRPipeline/entity_alignment/entity_alignment.py
