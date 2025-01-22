@@ -40,7 +40,7 @@ EHRPIPELINE
 |-- EHRPipeline
 |   |-- entity_alignment/         # Tools for entity alignment
 |   |-- entity_linking/           # Tools for entity linking
-|       |-- icd_snomed_validation.csv  # Sample linking data
+|       |-- icd_snomed_validation.csv  # Sample linked data
 |       |-- linking_validation.py      # Validation scripts
 |   |-- fact_validation/          # Methods for fact validation
 |   |-- semantic_completeness/    # Scripts ensuring semantic completeness
